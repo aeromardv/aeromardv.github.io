@@ -244,6 +244,7 @@ nav a:hover {
 }
 .money i {
 	margin: auto 5px auto 10px;
+	color: #ff0009;
 }
 .moneyp2 {
 	margin: auto auto auto 5px;
@@ -262,6 +263,7 @@ nav a:hover {
 
 .time i {
 	margin: auto 10px auto 5px;
+	color: #ff0009;
 }
 
 .timep2 {

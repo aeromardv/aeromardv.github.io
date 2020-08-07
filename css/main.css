@@ -20,6 +20,12 @@ body {
 h1 {
 	text-align: center;
 	font-family: Poiret One;
+	text-decoration: underline;
+	text-decoration-color: #ff0009;
+}
+
+.slider h1 {
+	text-decoration: none;
 }
 
 h2 {
@@ -188,6 +194,11 @@ nav a:hover {
 	margin: 0 auto;
 }
 
+.main-page-img {
+	display: none;
+	width: 100%;
+}
+
 .contacts {
 	display: flex;
 	flex-wrap: wrap;
@@ -200,8 +211,6 @@ nav a:hover {
 
 .conth2 {
 	color: #0072bc;
-	text-decoration: underline;
-	text-decoration-color: #ff0009;
 }
 
 .map {
@@ -393,6 +402,85 @@ nav a:hover {
 	margin: 0 auto;
 }
 
+.gallery-main-content {
+	width: 100%;
+	padding: 10px 0 40px 0;
+	margin: auto;
+}
+
+.gallery {
+	display: flex;
+	justify-content: center;
+}
+
+.mgallery {
+	display: none;
+	justify-content: center;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.thumb1, .thumb2 {
+	display: block;
+	padding: 5px;
+	transition: 0.5s;
+}
+
+.thumb1:hover, .thumb2:hover {
+	transform: scale(1.05);
+}
+
+.gallery-image1 {
+	width: 31vw;
+}
+
+.modalDialog {
+	display: none;
+	position: fixed;
+	pointer-events: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 1;
+}
+
+.modalDialog:target {
+	display: flex;
+	justify-content: center;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	position: relative;
+	
+	margin: auto;
+	padding: 5px;
+	background: #fff;
+}
+
+.close {
+	background: #0072bc;
+	color: #fff;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 12px;
+}
+
+.close:hover {
+	background: #ff0009;
+}
+
 /*Footer*/
 
 .mainb {
@@ -475,9 +563,27 @@ footer a {
 	}
 }
 
+@media screen and (max-width: 1570px) {
+	.thumb1 {
+		width: 18.1vw;
+	}
+	
+	.thumb2 {
+		width: 27.6vw;
+	}
+}
+
 @media screen and (max-width: 1400px) {
 	header {
 		width: 95%;
+	}
+	
+	.gallery-image1 {
+		width: 45vw;
+	}
+	
+	.gallery-image2 {
+		width: 90vw;
 	}
 }
 
@@ -499,6 +605,10 @@ footer a {
 		width: 49%;
 	}
 	
+	.gallery-image1 {
+		width: 57vw;
+	}
+	
 	.footer {
 		width: 360px;
 	}
@@ -508,15 +618,47 @@ footer a {
 	}
 }
 
+@media screen and (max-width: 940px) {
+	.gallery-image1 {
+		width: 65vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.gallery {
+		display: none;
+	}
+	
+	.mgallery {
+		display: flex;
+	}
+	
+	.thumb1 {
+		width: 33.2vw;
+	}
+	
+	.thumb2 {
+		width: 52.2vw;
+	}
+}
+
 @media screen and (max-width: 720px) {
 	.slider {
 		display: none;
 	}
 	
+	.main-content {
+		width: 90%;
+	}
+	
+	.main-page-img {
+		display: block;
+	}
+	
 	.aircraft {
 		flex-direction: column;
 	}
-
+	
 	.enterprises {
 		flex-direction: column;
 	}
@@ -540,11 +682,11 @@ footer a {
 	header {
 		padding: 5px;
 	}
-
-	.main-content {
-		width: 90%;
+	
+	.gallery-image1 {
+		width: 85vw;
 	}
-		
+	
 	.pageimg {
 		width: 90%;
 	}

@@ -194,6 +194,12 @@ nav a:hover {
 	margin: 0 auto;
 }
 
+.main-content-catalog {
+	width: 90%;
+	padding: 10px 0 40px 0;
+	margin: 0 auto;
+}
+
 .main-page-img {
 	display: none;
 	width: 100%;
@@ -481,6 +487,75 @@ nav a:hover {
 	background: #ff0009;
 }
 
+.trade {
+	display: flex;
+	flex-direction: column;
+}
+
+.skyshop {
+	display:flex;
+	align-items: center;
+	width: 100%;
+}
+
+.skyshop-a {
+	width: 46.24%;
+}
+
+.skyshop-a img {
+	width: 100%;
+	transition: 0.5s;
+}
+
+.skyshop-a img:hover {
+	transform: scale(1.05);
+	filter: drop-shadow(4px 4px 4px #ff0009);
+}
+
+.skyshop-p {
+	width: 53.76%;
+	font-family: Poiret One;
+	font-size: 27;
+	font-weight: bold;
+	margin: 0 20;
+}
+
+.skybistro {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.skybistro-a {
+	width: 53.76%;
+}
+
+.skybistro-a img {
+	width: 100%;
+	transition: 0.5s;
+}
+
+.skybistro-a img:hover {
+	transform: scale(1.05);
+	filter: drop-shadow(4px 4px 4px #0072bc);
+}
+
+.skybistro-p {
+	width: 46.24%;
+	font-family: Poiret One;
+	font-size: 27;
+	font-weight: bold;
+	margin: 0 20;
+}
+
+.skybistro-pm {
+	display: none;
+	width: 100%;
+	font-family: Poiret One;
+	font-size: 27;
+	font-weight: bold;
+}
+
 /*Footer*/
 
 .mainb {
@@ -621,6 +696,34 @@ footer a {
 @media screen and (max-width: 940px) {
 	.gallery-image1 {
 		width: 65vw;
+	}
+	
+	.skyshop {
+		flex-direction: column;
+	}
+	
+	.skyshop-a {
+		width: 100%;
+	}
+	
+	.skyshop-p {
+		width: 100%;
+	}
+	
+	.skybistro {
+		flex-direction: column;
+	}
+	
+	.skybistro-a {
+		width: 100%;
+	}
+	
+	.skybistro-p {
+		display: none;
+	}
+	
+	.skybistro-pm {
+		display: block;
 	}
 }
 

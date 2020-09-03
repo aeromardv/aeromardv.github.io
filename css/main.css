@@ -358,7 +358,7 @@ nav a:hover {
 .partners {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	width: 100%;
 	margin: 0 auto;
@@ -366,6 +366,7 @@ nav a:hover {
 
 .plogo {
 	width: 24%;
+	padding: 0.5%;
 }
 
 .tenders-button {

@@ -576,7 +576,7 @@ nav a:hover {
 
 .shop-a img:hover {
 	transform: scale(1.05);
-	filter: drop-shadow(4px 4px 4px #0072bc);
+	filter: drop-shadow(4px 4px 4px #ff0009);
 }
 
 .shop-p {

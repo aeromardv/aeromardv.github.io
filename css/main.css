@@ -457,6 +457,10 @@ nav a:hover {
 	width: 31vw;
 }
 
+.gallery-image2 {
+	width: 55vw;
+}
+
 .modalDialog {
 	display: none;
 	position: fixed;

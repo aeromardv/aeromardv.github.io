@@ -4,6 +4,32 @@ body {
 	width: 100%;
 	margin: auto;
 	font-family: Arial;
+	
+	background-color: #f4f4f4;
+	background-image: url("../img/holiday/snow1.png"),url("../img/holiday/snow3.png"),url("../img/holiday/snow2.png");
+	animation: snow 20s linear infinite;
+	
+}
+
+@keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+	100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+	100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+	50% {background-color:#b4cfe0;}
+	100% {background-position: 500px 1000px, 400px 400px, 300px 300px; background-color:#6b92b9;}
+}
+
+@-ms-keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+	100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
 }
 
 .main {
@@ -35,6 +61,11 @@ h2 {
 	font-family: Poiret One;
 }
 
+.h2-a {
+	text-decoration: underline;
+	text-decoration-color: #ff0009;
+}
+
 .enth1-1 {
 	text-align: center;
 	font-family: Poiret One;
@@ -49,10 +80,14 @@ h2 {
 
 .moneyh2 {
 	text-align: left;
+	text-decoration: underline;
+	text-decoration-color: #ff0009;
 }
 
 .timeh2 {
 	text-align: right;
+	text-decoration: underline;
+	text-decoration-color: #ff0009;
 }
 
 /*Header*/
@@ -63,7 +98,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	width: 70%;
-	padding: 10px;
+	padding: 0.8%;
 	margin: auto;
 	color: black;
 	font-size: 21;
@@ -77,10 +112,11 @@ header {
 .slogo {
 	width: 306px;
 	height: 118px;
+	transition: 0.5s;
 }
 
 .slogo:hover {
-	filter: drop-shadow(5px 5px 5px #0072bc);
+	filter: drop-shadow(2px 2px 2px #0072bc);
 }
 
 header i {
@@ -164,11 +200,11 @@ nav a:hover {
     width: 100%;
 	height:100%;
     background-color: #0072bc;
-    top: -100%;
+    top: -130%;
     transition: top .2s;
     z-index: 6;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
  
 .hidden-menu a {
@@ -223,7 +259,7 @@ nav a:hover {
 }
 
 .map {
-	width: 100%;
+	width: 99%;
 	border: 2px solid #0072bc;
 }
 
@@ -293,6 +329,11 @@ nav a:hover {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.prod-h2 {
+	text-decoration: underline;
+	text-decoration-color: #ff0009;
 }
 
 .prod {
@@ -480,28 +521,9 @@ nav a:hover {
 
 .modalDialog > div {
 	position: relative;
-	
 	margin: auto;
 	padding: 5px;
-	background: #fff;
-}
-
-.close {
 	background: #0072bc;
-	color: #fff;
-	line-height: 25px;
-	position: absolute;
-	right: -12px;
-	text-align: center;
-	top: -10px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	border-radius: 12px;
-}
-
-.close:hover {
-	background: #ff0009;
 }
 
 .trade {
@@ -520,17 +542,18 @@ nav a:hover {
 }
 
 .skyshop-a img {
-	width: 100%;
+	width: 90%;
 	transition: 0.5s;
 }
 
 .skyshop-a img:hover {
 	transform: scale(1.05);
-	filter: drop-shadow(4px 4px 4px #ff0009);
+	filter: drop-shadow(2px 2px 2px #ff0009);
 }
 
 .skyshop-p {
 	width: 65%;
+	text-indent: 20px;
 	font-size: 21;
 	margin: 0 20;
 }
@@ -546,326 +569,163 @@ nav a:hover {
 }
 
 .skybistro-a img {
-	width: 100%;
+	width: 90%;
 	transition: 0.5s;
 }
 
 .skybistro-a img:hover {
 	transform: scale(1.05);
-	filter: drop-shadow(4px 4px 4px #0072bc);
+	filter: drop-shadow(2px 2px 2px #0072bc);
 }
 
 .skybistro-p {
 	width: 65%;
+	text-indent: 20px;
 	font-size: 21;
 	margin: 0 20;
 }
 
-.shop {
+.amdvshop {
 	display: flex;
 	align-items: center;
 	width: 100%;
 }
 
-.shop-a {
+.amdvshop-a {
 	width: 35%;
 }
 
-.shop-a img {
-	width: 94%;
-	border-radius: 85px;
+.amdvshop-a img {
+	width: 90%;
 	transition: 0.5s;
 }
 
-.shop-a img:hover {
+.amdvshop-a img:hover {
 	transform: scale(1.05);
-	filter: drop-shadow(4px 4px 4px #ff0009);
+	filter: drop-shadow(2px 2px 2px #373535);
+}
+
+.amdvshop-p {
+	width: 65%;
+	text-indent: 20px;
+	font-size: 21;
+}
+.shop-h2 {
+	text-align: center;
+	font-family: Poiret One;
+	color: #0072bc;
+	text-decoration: underline;
+	text-decoration-color: #ff0009;
 }
 
 .shop-p {
-	width: 65%;
+	text-indent: 20px;
 	font-size: 21;
 }
 
-.shop-main {
+.shop-contacts {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.shop-contacts p {
+	font-size: 21;
+}
+
+.shop-contacts i {
+	color: #ff0009;
+}
+
+.shop-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.shop-row {
 	display: flex;
 	flex-direction: row;
 }
 
-.shop-main h2 {
-	color: #0072bc;
+.shop-row a {
+	width: 31%;
+	margin: 1.16%;
 }
 
-.shop-main i {
-	color: #ff0009;
+.shop-thumb {
+	width: 100%;
+	display: block;
+	transition: 0.5s;
 }
 
-.left {
-	width: 50%;
+.shop-thumb:hover {
+	transform: scale(1.1);
+}
+
+.food-image {
+	width: 50vw;
+}
+
+.shop-modalDialog {
+	display: none;
+	position: fixed;
+	pointer-events: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 1;
+}
+
+.shop-modalDialog:target {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	pointer-events: auto;
+}
+
+.shop-modalDialog > div {
 	position: relative;
+	margin: auto;
+	padding: 0.4vw;
+	background: #0072bc;
 }
 
-.left ol, ul {
-	margin: 0;
+.shop-modalDialog h2 {
+	margin: auto;
+	text-align: center;
+	font-family: Poiret One;
+	font-weight: bold;
+	font-size: 28;
+	color: #fff;
 }
 
-.left li {
-	padding: 2%;
+.shop-modalDialog p {
+	margin: auto;
+	text-align: center;
+	font-family: Poiret One;
+	font-weight: bold;
+	font-size: 19;
+	color: #fff;
 }
 
-.left img {
-	width: 100%;
-	border-radius: 10px;
+.promo {
+	font-size: 21;
+	color: #ff000a;
+	animation: blink5 4s linear infinite;
 }
 
-.right {
-	width: 50%;
-	position: relative;
-	display: flex;
-	flex-direction: column;
+@keyframes blink5 {
+	0% { color: #ff000a; }
+	25% { color: #ffce13; }
+	50% { color: #0072bc; }
+	75% { color: #ffce13; }
+	100% { color: ##ff000a; }
 }
-
-.right img {
-	width: 100%;
-	position: absolute;
-	top: 6%;
-	border-radius: 10px;
-}
-
-.li1 {
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-.food1 {
-	opacity: 0;
-	position: absolute;
-	left: 100%;
-	top: 6%;
-	z-index: -1;
-	transition: 0.5s;
-}
-
-.li1:hover {
-	color: #ff0009;
-}
-
-.li1:hover ~ .food1 {
-	opacity: 1;
-	z-index: 1;
-}
-
-.li2 {
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-.li2:hover {
-	color: #ff0009;
-}
-
-.food2 {
-	opacity: 0;
-	position: absolute;
-	left: 100%;
-	top: 6%;
-	z-index: -1;
-	transition: 0.5s;
-}
-
-.li2:hover ~ .food2 {
-	opacity: 1;
-	z-index: 1;
-}
-
-.li3 {
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-.li3:hover {
-	color: #ff0009;
-}
-
-.food3 {
-	opacity: 0;
-	position: absolute;
-	left: 100%;
-	top: 6%;
-	z-index: -1;
-	transition: 0.5s;
-}
-
-
-.li3:hover ~ .food3 {
-	opacity: 1;
-	z-index: 1;
-}
-
-.li4 {
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-.li4:hover {
-	color: #ff0009;
-}
-
-.food4 {
-	opacity: 0;
-	position: absolute;
-	left: 100%;
-	top: 6%;
-	z-index: -1;
-	transition: 0.5s;
-}
-
-.li4:hover ~ .food4 {
-	opacity: 1;
-	z-index: 1;
-}
-
-.li5 {
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-.li5:hover {
-	color: #ff0009;
-}
-
-.food5 {
-	opacity: 0;
-	position: absolute;
-	left: 100%;
-	top: 6%;
-	z-index: -1;
-	transition: 0.5s;
-}
-
-.li5:hover ~ .food5 {
-	opacity: 1;
-	z-index: 1;
-}
-
-.li6 {
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-.li6:hover {
-	color: #ff0009;
-}
-
-.food6 {
-	opacity: 0;
-	position: absolute;
-	left: 100%;
-	top: 6%;
-	z-index: -1;
-	transition: 0.5s;
-}
-
-.li6:hover ~ .food6 {
-	opacity: 1;
-	z-index: 1;
-}
-
-.li7 {
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-.li7:hover {
-	color: #ff0009;
-}
-
-.food7 {
-	opacity: 0;
-	position: absolute;
-	left: 100%;
-	top: 6%;
-	z-index: -1;
-	transition: 0.5s;
-}
-
-.li7:hover ~ .food7 {
-	opacity: 1;
-	z-index: 1;
-}
-
-/*.li8 {
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-.li8:hover {
-	color: #ff0009;
-}
-
-.food8 {
-	opacity: 0;
-	position: absolute;
-	left: 100%;
-	top: 10%;
-	z-index: -1;
-	transition: 0.5s;
-}
-
-.li8:hover ~ .food8 {
-	opacity: 1;
-	z-index: 1;
-}
-
-.li9 {
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-.li9:hover {
-	color: #ff0009;
-}
-
-.food9 {
-	opacity: 0;
-	position: absolute;
-	left: 100%;
-	top: 10%;
-	z-index: -1;
-	transition: 0.5s;
-}
-
-.li9:hover ~ .food9 {
-	opacity: 1;
-	z-index: 1;
-}
-
-.li10 {
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-.li10:hover {
-	color: #ff0009;
-}
-
-.food10 {
-	opacity: 0;
-	position: absolute;
-	left: 100%;
-	top: 10%;
-	z-index: -1;
-	transition: 0.5s;
-}
-
-.li10:hover ~ .food10 {
-	opacity: 1;
-	z-index: 1;
-}*/
-
-
 
 /*Footer*/
 
@@ -883,8 +743,11 @@ footer a {
 }
 
 .totop {
+	width: 28px;
+	height: 32px;
 	padding: 6px;
 	background-color: #ff0009;
+	text-align: center;
 	text-decoration: none;
 }
 
@@ -893,17 +756,28 @@ footer a {
 }
 
 .footer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
 	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	padding: 50px 0;
 	margin: 0 auto;
 }
-
+	
 .flogo {
 	width: 40%;
+}
+	
+.footer p {
+	width: 30%;
+	text-align: center;
+}
+	
+.nav-bottom {
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .menu-bottom {
@@ -938,15 +812,7 @@ footer a {
 	
 	.prodimg {
 		width: 100%;
-	}
-	
-	.footer {
-		width: 80%;
-	}
-	
-	.flogo {
-		width: 30%;
-	}
+	}	
 }
 
 @media screen and (max-width: 1570px) {
@@ -956,6 +822,18 @@ footer a {
 	
 	.thumb2 {
 		width: 27.6vw;
+	}
+	
+	.food-image {
+		width: 44wv;
+	}
+	
+	.shop-modalDialog h2 {
+		font-size: 22;
+	}
+
+	.shop-modalDialog p {
+		font-size: 13;
 	}
 }
 
@@ -971,12 +849,22 @@ footer a {
 	.gallery-image2 {
 		width: 90vw;
 	}
+	
+}
+
+@media screen and (max-width: 1279px) {
+	.shop-contacts {
+		width: 70%;
+	}
+	
+	.footer {
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 1079px) {
 	header {
-		justify-content: center;
-		width: 306px;
+		flex-direction: column;
 	}
 	
 	.navbar {
@@ -995,12 +883,34 @@ footer a {
 		width: 57vw;
 	}
 	
+	.food-image {
+		width: 80vw;
+	}
+	
+	.shop-modalDialog > div {
+		padding: 0.8vw;
+	}
+	
+	.shop-contacts {
+		width: 80%;
+	}
+	
 	.footer {
-		width: 360px;
+		width: 95%;
+		flex-direction: column;
+		align-items: center;
 	}
 	
 	.flogo {
-	width: 70%;
+		width: 60%;
+	}
+	
+	.footer p {
+		width: 60%;
+	}
+	
+	.nav-bottom {
+		width: 55%;
 	}
 }
 
@@ -1014,7 +924,7 @@ footer a {
 	}
 	
 	.skyshop-a {
-		width: 100%;
+		width: 90%;
 	}
 	
 	.skyshop-p {
@@ -1026,31 +936,52 @@ footer a {
 	}
 	
 	.skybistro-a {
-		width: 100%;
+		width: 90%;
 	}
 	
 	.skybistro-p {
-		display: none;
-	}
-	
-	.skybistro-pm {
-		display: block;
+		width: 100%;
 	}
 
-	.shop {
+	.amdvshop {
 		flex-direction: column;
 	}
 	
-	.shop-a {
+	.amdvshop-a {
+		width: 95%;
+	}
+	
+	.amdvshop-p {
 		width: 100%;
 	}
 	
-	.shop-p {
-		width: 100%;
+	.shop-contacts {
+		width: 90%;
+	}
+	
+	.food-image {
+		width: 98vw;
+	}
+	
+	.shop-modalDialog > div {
+		padding: 1vw;
+	}
+}
+
+@media screen and (max-width: 819px) {
+	.shop-contacts {
+		width: 85%;
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
 @media screen and (max-width: 800px) {
+	header p {
+		width: 100%;
+		text-align: center;
+	}
+	
 	.gallery {
 		display: none;
 	}
@@ -1105,10 +1036,6 @@ footer a {
 }
 
 @media screen and (max-width: 600px) {
-	header {
-		padding: 5px;
-	}
-	
 	.gallery-image1 {
 		width: 85vw;
 	}
@@ -1116,14 +1043,68 @@ footer a {
 	.pageimg {
 		width: 90%;
 	}
-}
-
-@media screen and (max-width: 400px) {
+	
 	.footer {
-		width: 310px;
+		width: 100%;
 	}
 	
 	.flogo {
-	width: 70%;
+		width: 90%;
+	}
+	
+	.footer p {
+		width: 90%;
+	}
+	
+	.nav-bottom {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.food-image {
+		width: 97vw;
+	}
+	
+	.shop-modalDialog > div {
+		padding: 1.5vw;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	header {
+		width: 98.4%;
+	}
+	
+	.logo img {
+		width: 100%;
+	}
+	
+	.slogo {
+		width: 90%;
+	}
+	
+	.slogo img {
+		width: 100%;
+	}
+	
+	.main-content {
+		width: 94%;
+	}
+	
+	.shop-p {
+		font-size: 19;
+	}
+	
+	.food-image {
+		width: 98vw;
+	}
+	
+	.shop-modalDialog > div {
+		padding: 1vw;
+	}
+	
+	.shop-contacts {
+		width: 100%;
 	}
 }

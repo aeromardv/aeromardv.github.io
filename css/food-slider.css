@@ -1,0 +1,111 @@
+.food-slider {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.food-slider input {
+	display: none;
+}
+
+.controls {
+	display: flex;
+	flex-direction: row;
+}
+
+.controls label {
+	cursor: pointer;
+	color: #fff;
+	margin: 6px;
+}
+
+.controls label:hover {
+	color: #ff0009;
+}
+
+.slider {
+	display: block;
+	width: 100%;
+}
+
+.food-slider-img {
+	width: 100%;
+}
+
+/*--Slider1--*/
+
+.slide1-1 {
+	display: none;
+}
+
+.slide1-2 {
+	display: none;
+}
+
+#slide1-1:checked ~ .slider > .slide1-1 {
+	display: block;
+}
+
+#slide1-2:checked ~ .slider > .slide1-2 {
+	display: block;
+}
+
+#slide1-1:checked ~ .controls > .dot1-1 {
+	color: #ff0009;
+}
+
+#slide1-2:checked ~ .controls > .dot1-2 {
+	color: #ff0009;
+}
+
+/*--Slider2--*/
+
+.slide2-1 {
+	display: none;
+}
+
+.slide2-2 {
+	display: none;
+}
+
+#slide2-1:checked ~ .slider > .slide2-1 {
+	display: block;
+}
+
+#slide2-2:checked ~ .slider > .slide2-2 {
+	display: block;
+}
+
+#slide2-1:checked ~ .controls > .dot2-1 {
+	color: #ff0009;
+}
+
+#slide2-2:checked ~ .controls > .dot2-2 {
+	color: #ff0009;
+}
+
+/*--Slider3--*/
+
+.slide3-1 {
+	display: none;
+}
+
+.slide3-2 {
+	display: none;
+}
+
+#slide3-1:checked ~ .slider > .slide3-1 {
+	display: block;
+}
+
+#slide3-2:checked ~ .slider > .slide3-2 {
+	display: block;
+}
+
+#slide3-1:checked ~ .controls > .dot3-1 {
+	color: #ff0009;
+}
+
+#slide3-2:checked ~ .controls > .dot3-2 {
+	color: #ff0009;
+}

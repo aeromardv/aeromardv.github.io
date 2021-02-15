@@ -4,7 +4,6 @@ body {
 	width: 100%;
 	margin: auto;
 	font-family: Arial;
-	
 	background-color: #f4f4f4;
 	background-image: url("../img/holiday/snow1.png"),url("../img/holiday/snow3.png"),url("../img/holiday/snow2.png");
 	animation: snow 20s linear infinite;
